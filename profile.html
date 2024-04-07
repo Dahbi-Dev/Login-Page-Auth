@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./profile.css">
+    <script src="./profile.js" defer type="module"></script>
+    <style>
+        body {
+    background-color: #f5f5f5; /* Light mode background color */
+    color: #333; /* Light mode text color */
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #f5f5f5; /* Dark mode text color */
+}
+
+button {
+    background-color: rgba(0, 131, 168, 0.752);
+    color: #f5f5f5;
+    border-radius: 8px;
+    cursor:pointer;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    margin: 5px;
+}
+
+
+img{
+    border-radius: 8px;
+}
+
+.cont {
+    display: flex;
+   justify-content: center;
+}
+/* Add additional styles as needed */
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="signedInMessage">Signed in</h1>
+        <div id="userData">
+            <img id="profileImage" width="120" alt="Profile Image">
+            <p>Email: <span style="color:rgba(0, 131, 168, 0.752); " id="userEmail"></span></p>
+            <p>Display Name: <span style="color:rgba(0, 131, 168, 0.752); " id="userDisplayName"></span></p>
+        </div>
+        <div class="cont">
+            <button id="signOutButton">Sign Out</button>
+            <button style="background-color: black;" id="toggleDarkMode">Dark Mode</button>
+        </div>
+    </div>
+</body>
+</html>
